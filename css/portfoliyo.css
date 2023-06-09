@@ -2,6 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* border: 2px solid; */
 }
 
 .container {
@@ -11,7 +12,31 @@
 
 @font-face {
         font-family: lato;
-        src: url(./Lato2OFL/Lato2OFL/Lato-Light.ttf);
+        src: url(../font/Lato2OFL/Lato2OFL/Lato-Medium.ttf);
+}
+
+@font-face {
+        font-family: ivm;
+        src: url(../font/Ivm/IvyMode-Regular.ttf);
+}
+
+@font-face {
+        font-family: popins;
+        src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+h2,
+h3 {
+        font-family: ivm;
+}
+
+p {
+        font-family: lato;
+}
+
+h4,
+h5 {
+        font-family: popins;
 }
 
 .row {
@@ -23,25 +48,73 @@
         justify-content: space-between;
 }
 
+.jc-sp-evn {
+        justify-content: space-evenly;
+}
+
 .align-item-center {
         align-items: center;
 }
 
-.pos-rel {
-        position: relative;
+
+.jc-center {
+        justify-content: center;
 }
 
-.pos-ab {
-        position: absolute;
+.gap {
+        column-gap: 25px;
 }
+
+/* ------------------------ */
+.col28 {
+        width: 28%;
+}
+
+.col30 {
+        width: 30%;
+}
+
+.col20 {
+        width: 20%;
+}
+
+.col50 {
+        width: 50%;
+}
+
+.col60 {
+        width: 60%;
+}
+
+.col80 {
+        width: 80%;
+}
+
+/* ---------------------------- */
 
 .bg {
-        background-color: antiquewhite;
+        background-image: url(../img/bg2.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* height: 800px; */
+        /* width: auto; */
 }
 
-.name p {
-        font-size: 20px;
-        padding: 10px 0;
+.bgcolor {
+        background-color: rgba(0, 0, 0, 0.717);
+}
+
+
+.name h3 {
+        font-size: 30px;
+        padding: 15px 0;
+        color: aliceblue;
+        letter-spacing: 5px;
+}
+
+.name span {
+        color: crimson;
 }
 
 .menu {
@@ -49,96 +122,134 @@
         list-style: none;
 }
 
-.menu li a p {
-        padding: 10px;
-
+.menu li p a {
+        font-size: 20px;
+        padding: 15px 20px;
+        color: aliceblue;
+        text-decoration: none;
 }
 
 .header-text {
-        width: 35%;
-        padding: 50px 20px;
+        width: 40%;
+        padding: 80px 20px;
+}
+
+.header-text h2,
+.header-text h4 {
+        font-size: 60px;
+        letter-spacing: 5px;
 }
 
 .header-text h2 {
-        font-size: 65px;
+        color: crimson;
+}
+
+.header-text h4 {
+        color: aliceblue;
+}
+
+.header-btn {
+        padding: 30px 0;
 }
 
 .header-btn button {
         padding: 20px 50px;
         font-size: 20px;
         background: none;
+        border: 2px solid crimson;
+        color: aliceblue;
 }
 
+/* ---------------------------- */
 .sec1 {
-        padding: 40px 0;
+        padding: 50px 0;
 }
 
 .sec1-text {
         width: 50%;
         margin: 0 auto;
-        padding: 20px 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
         text-align: center;
 }
 
-.sec1-text h2 {
-        font-size: 30px;
-        padding: 20px;
+.sec1-text h4 {
+        font-size: 50px;
+        padding: 20px 0;
+        letter-spacing: 5px;
+}
+
+.sec1-text span {
+        color: crimson;
 }
 
 .sec1-text p {
         font-size: 20px;
-        padding: 20px;
+        padding: 20px 0;
 }
 
-.col23 {
-        width: 23%;
-}
 
 .sec1-box {
-        background-color: bisque;
+        background-color: rgb(248, 244, 245);
         border-radius: 5px;
+        box-shadow: 1px 1px 15px gray;
+        /* margin: 20px 0; */
+        text-align: center;
+        height: 350px;
 }
 
 .sec1-box-text {
-        padding: 10px;
+        padding: 30px;
+        line-height: 30px;
 }
 
-.sec1-box-text h2 {
-        font-size: 20px;
+.sec1-box-text i {
+        font-size: 55px;
         padding: 10px 0;
+        color: crimson;
 }
+
+.sec1-box-text h4 {
+        font-size: 25px;
+        padding: 10px 0;
+        font-weight: 600;
+}
+
 
 .sec1-box-text p {
-        font-size: 15spx;
+        font-size: 20px;
         padding: 10px 0;
 }
 
 /* ----------------------sec2------------- */
 
 .sec2 {
-        padding: 40px 0;
+        padding: 50px 0;
 }
 
 .sec2-text {
-        padding: 20px 0;
+        /* padding: 20px 0; */
 }
 
-.sec2-text h2 {
-        font-size: 30px;
-        padding: 20px;
+.sec2-text h4 {
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         text-align: center;
+        letter-spacing: 5px;
 }
 
-.col50 {
-        width: 50%;
+.sec2-text span {
+        color: crimson;
 }
 
 .project-text {
-        padding: 50px 0;
-        background-color: gray;
+        padding: 50px;
+        background-color: #323d48;
+        color: aliceblue;
 }
 
-.project-text h2 {
+.project-text h4 {
         font-size: 30px;
         padding: 20px;
 }
@@ -149,29 +260,36 @@
 }
 
 /* -------------------------sec3----------------- */
-
-.col30 {
-        width: 30%;
+.sec3 {
+        padding: 50px 0;
 }
 
-.col60 {
-        width: 60%;
+.sec3-img {
+        width: 80%;
 }
 
-.sec3-img {}
+.sec3-img img {
+        width: 100%;
+}
 
 .sec3-text {
-        padding: 10px;
+        padding: 30px;
 }
 
-.sec3-text h2 {
-        font-size: 30px;
-        padding: 20px 0;
+.sec3-text h4 {
+        font-size: 50px;
+        padding: 10px 0;
+        letter-spacing: 5px;
 }
 
-.sec3-text h3 {
+.sec3-text span {
+        color: crimson;
+}
+
+.sec3-text h5 {
         font-size: 20px;
-        padding: 20px 0;
+        padding: 10px 0;
+        letter-spacing: 5px;
 }
 
 .sec3-text p {
@@ -179,33 +297,77 @@
         padding: 20px 0;
 }
 
-.sec3-button button {
+.sec3-btn {
+        padding: 30px 0;
+}
+
+.sec3-btn button {
         padding: 20px 50px;
         font-size: 20px;
         background: none;
+        border: 2px solid crimson;
 }
 
 /* ------------------sec4----------------- */
-
-.sec4-text {
-        padding: 40px 0;
+.sec4 {
+        padding: 50px 0;
 }
 
-.sec4-text h2 {
-        font-size: 30px;
-        padding: 20px 0;
+.sec4-text {
+        /* padding: 40px 0; */
+}
+
+.sec4-text h4 {
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         text-align: center;
+        letter-spacing: 5px;
+}
+
+.sec4-text span {
+        color: crimson;
 }
 
 .sec4-box {
+        background-color: rgb(248, 244, 245);
         border-radius: 5px;
-        border: 1px solid;
+        box-shadow: 2px 2px 15px gray;
+        padding: 25px;
+}
+
+.sec4-box-icon {
+        margin: 3px;
+        background-color: crimson;
+        border-radius: 10px;
+        text-align: center;
+}
+
+.sec4-box-icon i {
+        font-size: 30px;
+        padding: 10px;
+}
+
+.sec4-box h4 {
+        font-size: 25px;
+        padding: 10px 0;
+
+}
+
+.sec4-box p {
+        font-size: 20px;
+        padding: 10px 0;
+        text-align: center;
+}
+
+.email p {
+        font-size: 19px;
 }
 
 /* -------------------footer------------------- */
 
 .footer {
-        background-color: grey;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
         padding: 30px 0;
 }
 
@@ -214,10 +376,66 @@
 }
 
 .footer-text h2 {
-        font-size: 20px;
+        font-size: 30px;
+        color: aliceblue;
+        letter-spacing: 5px;
+}
+
+.footer span {
+        color: crimson;
+}
+
+.footer-text h4 {
+        font-size: 23px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: aliceblue;
+}
+
+.footer-text i {
+        font-size: 35px;
+        padding: 10px;
+        margin: 0 5px;
+        background-color: aliceblue;
+        border-radius: 50%;
 }
 
 .footer-text p {
-        font-size: 20px;
-        padding: 10px 0;
+        font-size: 15px;
+        color: aliceblue;
+        padding-top: 20px;
+        padding-bottom: 10px;
+}
+
+/* --------------------------- */
+.menu a:hover {
+        color: crimson;
+        border-bottom: 2px solid crimson;
+}
+
+.header-btn button:hover {
+        background-color: crimson;
+}
+
+.footer-text i:hover {
+        background-color: crimson;
+        color: aliceblue;
+}
+
+.sec4-box:hover {
+        box-shadow: 1px 1px 10px gray;
+
+}
+
+.sec4-box:hover i {
+        color: aliceblue;
+}
+
+.sec3-btn button:hover {
+        background-color: crimson;
+        color: aliceblue;
+}
+
+.sec1-box:hover {
+        box-shadow: 1px 1px 10px gray;
 }
