@@ -48,21 +48,28 @@ h5 {
         justify-content: space-between;
 }
 
-.jc-sp-evn {
+/* .jc-sp-evn {
         justify-content: space-evenly;
+} */
+
+.jc-center {
+        justify-content: center;
 }
 
 .align-item-center {
         align-items: center;
 }
 
-
-.jc-center {
-        justify-content: center;
-}
-
 .gap {
         column-gap: 25px;
+}
+
+.po-ab {
+        position: absolute;
+}
+
+.po-rel {
+        position: relative;
 }
 
 /* ------------------------ */
@@ -96,8 +103,9 @@ h5 {
         background-image: url(../img/bg2.jpeg);
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
         /* height: 800px; */
+
         /* width: auto; */
 }
 
@@ -127,6 +135,7 @@ h5 {
         padding: 15px 20px;
         color: aliceblue;
         text-decoration: none;
+        /* position: relative; */
 }
 
 .header-text {
@@ -223,12 +232,12 @@ h5 {
 
 /* ----------------------sec2------------- */
 
-.sec2 {
+/* .sec2 {
         padding: 50px 0;
 }
 
 .sec2-text {
-        /* padding: 20px 0; */
+        padding: 20px 0;
 }
 
 .sec2-text h4 {
@@ -257,6 +266,91 @@ h5 {
 .project-text p {
         font-size: 20px;
         padding: 20px;
+}
+
+.sec2-img img {
+        width: 100%;
+        height: 370px;
+        display: block;
+} */
+/* -------------------------------- */
+
+.sec2-text1 {
+        padding: 20px 0;
+}
+
+.sec2-text1 h4 {
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        letter-spacing: 5px;
+}
+
+.sec2-text1 span {
+        color: crimson;
+}
+
+.sec2 {
+        padding: 50px 0;
+}
+
+.card {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        /* padding: 30px 50px; */
+        padding: 20px;
+        background: #fff;
+        cursor: pointer;
+        margin-right: 30px;
+}
+
+.card:hover {
+        height: 320px;
+}
+
+.sec2-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* transform: translateY(-80px); */
+        z-index: 99;
+        transition: 0.3s;
+}
+
+.sec2-img img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sec2-text {
+        padding: 10px 20px;
+        text-align: center;
+        transform: translateY(-450px);
+        opacity: 0;
+        transition: 0.3s;
+}
+
+.card:hover>.sec2-text {
+        opacity: 1;
+        transform: translateY(-180px);
+}
+
+.card:hover>.sec2-img {
+        transform: translateY(-100px);
+}
+
+.card:hover>.sec2-img h2 {
+        display: none;
+}
+
+.sec2-text h2 {
+        color: #7f9ead;
 }
 
 /* -------------------------sec3----------------- */
@@ -408,11 +502,55 @@ h5 {
 }
 
 /* --------------------------- */
-.menu a:hover {
-        color: crimson;
-        border-bottom: 2px solid crimson;
+.bb {
+        padding: 100px 0;
 }
 
+.sec3-img {
+        z-index: 10;
+}
+
+.sec3-img img {
+        transition: 1s all;
+        border: black 10px solid;
+}
+
+.sec3-2 {
+        padding: 100px 0;
+        width: 80%;
+        border: crimson 10px solid;
+        padding: 171px 127px;
+        z-index: 1;
+}
+
+.sec3-img img:hover {
+        transform: translate(30px, -30px);
+        box-shadow: gray -5px 5px 15px;
+        border-radius: 15px;
+}
+
+/* ---------------------------- */
+.menu li a {
+        display: inline-block;
+        /* padding: 8px 2px; */
+        /* transition: all 2s; */
+}
+
+.menu li a::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: crimson;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+}
+
+.menu li a:hover::after {
+        width: 100%;
+}
+
+/* ---------------- */
 .header-btn button:hover {
         background-color: crimson;
 }
@@ -424,7 +562,6 @@ h5 {
 
 .sec4-box:hover {
         box-shadow: 1px 1px 10px gray;
-
 }
 
 .sec4-box:hover i {
@@ -436,6 +573,125 @@ h5 {
         color: aliceblue;
 }
 
+.sec4-box i,
+.sec3-btn button,
+.footer-text i {
+        transition: 0.7s all;
+}
+
+
 .sec1-box:hover {
         box-shadow: 1px 1px 10px gray;
 }
+
+/* -------------------------------- */
+
+.header-text::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        /* width: 100%; */
+        /* background-color: black; */
+        /* opacity: 0.7; */
+        /* z-index: -1; */
+}
+
+/* .header-text {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #FFF;
+        padding: 0 50px;
+        justify-content: flex-start;
+} */
+
+.header-text h4,
+.header-text h2 {
+        display: block;
+        width: fit-content;
+        /* font-size: 4rem; */
+        position: relative;
+        color: transparent;
+        animation: text_reveal 0.5s ease forwards;
+        animation-delay: 1s;
+        /* font-size: 60px; */
+        /* letter-spacing: 5px; */
+}
+
+.header-text h4:nth-child(1) {
+        animation-delay: 1s;
+}
+
+.header-text h4:nth-child(2) {
+        animation-delay: 2s;
+}
+
+.header-text h2:nth-child(3) {
+        animation: text_reveal_name 0.5s ease forwards;
+        animation-delay: 3s;
+}
+
+.header-text h4 span,
+.header-text h2 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: crimson;
+        animation: text_reveal_box 1s ease;
+        animation-delay: 0.5s;
+}
+
+.header-text h4:nth-child(1) span {
+        animation-delay: 0.5s;
+}
+
+.header-text h4:nth-child(2) span {
+        animation-delay: 1.5s;
+}
+
+.header-text h2:nth-child(3) span {
+        animation-delay: 2.5s;
+}
+
+
+/* @keyframes hamburger_puls {
+        0% {
+                opacity: 1;
+                transform: scale(1);
+        }
+
+        100% {
+                opacity: 0;
+                transform: scale(1.4);
+        }
+} */
+
+@keyframes text_reveal_box {
+        50% {
+                width: 100%;
+                left: 0;
+        }
+
+        100% {
+                width: 0;
+                left: 100%;
+        }
+}
+
+@keyframes text_reveal {
+        100% {
+                color: white;
+        }
+}
+
+@keyframes text_reveal_name {
+        100% {
+                color: crimson;
+                font-weight: 500;
+        }
+}
+
+/* --------------------- */
