@@ -100,7 +100,7 @@ h5 {
 /* ---------------------------- */
 
 .bg {
-        background-image: url(../img/bg2.jpeg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.717), rgba(0, 0, 0, 0.717)), url(../img/bg2.jpeg);
         background-size: cover;
         background-position: center;
         /* background-repeat: no-repeat; */
@@ -109,16 +109,12 @@ h5 {
         /* width: auto; */
 }
 
-.bgcolor {
-        background-color: rgba(0, 0, 0, 0.717);
-}
-
-
 .name h3 {
         font-size: 30px;
         padding: 15px 0;
         color: aliceblue;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .name span {
@@ -130,12 +126,22 @@ h5 {
         list-style: none;
 }
 
-.menu li p a {
+.menu li a {
         font-size: 20px;
         padding: 15px 20px;
         color: aliceblue;
         text-decoration: none;
-        /* position: relative; */
+        font-family: lato;
+        text-transform: uppercase;
+        transition: all 1s;
+}
+
+li a:hover {
+        color: crimson;
+}
+
+.hp {
+        padding: 90px 0;
 }
 
 .header-text {
@@ -169,6 +175,17 @@ h5 {
         color: aliceblue;
 }
 
+nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 0 30px;
+
+}
+
 /* ---------------------------- */
 .sec1 {
         padding: 50px 0;
@@ -186,6 +203,7 @@ h5 {
         font-size: 50px;
         padding: 20px 0;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .sec1-text span {
@@ -222,6 +240,7 @@ h5 {
         font-size: 25px;
         padding: 10px 0;
         font-weight: 600;
+        text-transform: capitalize;
 }
 
 
@@ -232,48 +251,9 @@ h5 {
 
 /* ----------------------sec2------------- */
 
-/* .sec2 {
+.sec2 {
         padding: 50px 0;
 }
-
-.sec2-text {
-        padding: 20px 0;
-}
-
-.sec2-text h4 {
-        font-size: 50px;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        text-align: center;
-        letter-spacing: 5px;
-}
-
-.sec2-text span {
-        color: crimson;
-}
-
-.project-text {
-        padding: 50px;
-        background-color: #323d48;
-        color: aliceblue;
-}
-
-.project-text h4 {
-        font-size: 30px;
-        padding: 20px;
-}
-
-.project-text p {
-        font-size: 20px;
-        padding: 20px;
-}
-
-.sec2-img img {
-        width: 100%;
-        height: 370px;
-        display: block;
-} */
-/* -------------------------------- */
 
 .sec2-text1 {
         padding: 20px 0;
@@ -281,18 +261,15 @@ h5 {
 
 .sec2-text1 h4 {
         font-size: 50px;
-        padding-top: 20px;
-        padding-bottom: 40px;
+        padding: 20px 0;
+        /* padding-bottom: 40px; */
         text-align: center;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .sec2-text1 span {
         color: crimson;
-}
-
-.sec2 {
-        padding: 50px 0;
 }
 
 .card {
@@ -304,9 +281,9 @@ h5 {
         transition: 0.3s;
         /* padding: 30px 50px; */
         padding: 20px;
-        background: #fff;
+        background-color: rgb(248, 244, 245);
         cursor: pointer;
-        margin-right: 30px;
+        margin-top: 100px;
 }
 
 .card:hover {
@@ -328,12 +305,30 @@ h5 {
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
+.sec2-img h4 {
+        font-size: 25px;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+}
+
 .sec2-text {
-        padding: 10px 20px;
+        padding: 10px;
         text-align: center;
         transform: translateY(-450px);
         opacity: 0;
         transition: 0.3s;
+}
+
+.sec2-text h4 {
+        font-size: 25px;
+        padding: 10px 0;
+        text-transform: uppercase;
+}
+
+.sec2-text p {
+        font-size: 20px;
+        padding: 10px 0;
 }
 
 .card:hover>.sec2-text {
@@ -345,13 +340,13 @@ h5 {
         transform: translateY(-100px);
 }
 
-.card:hover>.sec2-img h2 {
+.card:hover>.sec2-img h4 {
         display: none;
 }
 
-.sec2-text h2 {
+/* .sec2-text h2 {
         color: #7f9ead;
-}
+} */
 
 /* -------------------------sec3----------------- */
 .sec3 {
@@ -374,6 +369,7 @@ h5 {
         font-size: 50px;
         padding: 10px 0;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .sec3-text span {
@@ -384,11 +380,18 @@ h5 {
         font-size: 20px;
         padding: 10px 0;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .sec3-text p {
         font-size: 20px;
         padding: 20px 0;
+}
+
+.sec3-text p::first-letter {
+        text-transform: uppercase;
+        color: crimson;
+        font-size: 40px;
 }
 
 .sec3-btn {
@@ -417,6 +420,7 @@ h5 {
         padding-bottom: 40px;
         text-align: center;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .sec4-text span {
@@ -445,7 +449,7 @@ h5 {
 .sec4-box h4 {
         font-size: 25px;
         padding: 10px 0;
-
+        text-transform: capitalize;
 }
 
 .sec4-box p {
@@ -473,6 +477,7 @@ h5 {
         font-size: 30px;
         color: aliceblue;
         letter-spacing: 5px;
+        text-transform: uppercase;
 }
 
 .footer span {
@@ -484,6 +489,7 @@ h5 {
         padding-top: 10px;
         padding-bottom: 20px;
         color: aliceblue;
+        text-transform: capitalize;
 }
 
 .footer-text i {
@@ -575,13 +581,18 @@ h5 {
 
 .sec4-box i,
 .sec3-btn button,
-.footer-text i {
+.footer-text i,
+.sec1-box i {
         transition: 0.7s all;
 }
 
 
 .sec1-box:hover {
         box-shadow: 1px 1px 10px gray;
+}
+
+.sec1-box:hover i {
+        color: #29323c;
 }
 
 /* -------------------------------- */
