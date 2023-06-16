@@ -533,19 +533,36 @@ nav {
         border: black 10px solid;
 }
 
-.sec3-2 {
+/* .sec3-2 {
         padding: 100px 0;
         width: 80%;
         border: crimson 10px solid;
         padding: 171px 127px;
         z-index: 1;
+} */
+
+
+.sec3-img::before {
+        content: "";
+        position: absolute;
+        width: 93%;
+        height: 93%;
+        border: 10px solid red;
+        z-index: -1;
+        top: 0;
+        transition: all 2s;
 }
 
 .sec3-img img:hover {
         transform: translate(30px, -30px);
+
+}
+
+/* .sec3-img img:hover {
+        transform: translate(30px, -30px);
         box-shadow: gray -5px 5px 15px;
         border-radius: 15px;
-}
+} */
 
 /* ---------------------------- */
 .menu li a {
