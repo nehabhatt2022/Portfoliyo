@@ -11,21 +11,37 @@
                 padding: 15px 10px;
         }
 
+        .header-text {
+                width: 44%;
+        }
+
+        .sec1-box-text {
+                padding: 25px 30px;
+        }
+
+        .sec2-img h4 {
+                font-size: 20px;
+        }
+
+        .sec2-text h4 {
+                font-size: 20px;
+        }
+
+        .sec2-text p {
+                font-size: 18px;
+        }
+
         .sec3-img {
                 left: 20px;
                 width: 92%;
         }
 
-        .sec3-2 {
-                left: 20px;
+        .sec3-text {
+                padding: 30px 50px;
         }
 
         .sec3-text h4 {
                 line-height: 25px;
-        }
-
-        .sec3-text {
-                padding: 30px 50px;
         }
 
         .sec3-text p {
@@ -33,13 +49,18 @@
                 text-align: justify;
         }
 
+        .sec4-box-icon {
+                margin: 2px;
+        }
+
         .sec4-box-icon i {
-                padding: 5px;
+                padding: 6px;
         }
 
         .email p {
                 font-size: 17px;
         }
+
 }
 
 @media (max-width: 768px) {
@@ -47,7 +68,16 @@
                 width: 100%;
         }
 
-        .sec1.col28 {
+        .header-text {
+                width: 50%;
+        }
+
+        .header-text h2,
+        .header-text h4 {
+                font-size: 50px;
+        }
+
+        .sec1 .col28 {
                 width: 90%;
         }
 
@@ -56,11 +86,16 @@
         }
 
         .sec3 .col30 {
-                width: 60%;
+                width: 100%;
         }
 
         .sec4 .col28 {
                 width: 70%;
+        }
+
+        .sec3 .col60 {
+                width: 80%;
+                margin: 0 auto;
         }
 
         .sec1-box {
@@ -81,23 +116,151 @@
                 padding: 0;
         }
 
+        .sec3-text {
+                text-align: center;
+                padding: 30px 0;
+        }
+
+        .sec3-text p {
+                text-align: center;
+        }
+
+        .sec3-img {
+                width: 50%;
+                margin: auto;
+        }
+
+        .bb {
+                order: 1;
+                padding: 0;
+        }
+
         .sec4-box {
                 margin: 20px 0;
         }
 
-        /* .sec4-box .col28 {
-                width: 70%;
+        .sec4-box-icon {
+                margin: 20px;
+        }
+
+        .sec4-box-icon i {
+                padding: 10px;
+        }
+
+        /* ---------------- */
+        .hamburger {
+                display: block;
+        }
+
+        /* .hamburger.active.bar:nth-child(2) {
+                opacity: 0;
+        }
+
+        .hamburger.active.bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active.bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
         } */
+
+        .menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: black;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+
+        }
+
+        /* .header li a {
+                margin: 16px 0;
+
+        } */
+
+        .menu.active {
+                left: 0;
+        }
 }
 
 @media (max-width: 576px) {
         .container {
                 width: 100%;
         }
+
+        .sec2 .col30 {
+                width: 70%;
+        }
+
+        .header-text {
+                width: 70%;
+        }
+
+        .header-text h2,
+        .header-text h4 {
+                font-size: 50px;
+        }
+
+        .sec1-box-text {
+                width: 90%;
+                margin: 0 auto;
+        }
+
+        .sec2-img {
+                width: 90%;
+                height: 70%;
+                margin: auto;
+        }
+
+        .sec2-img img {
+                width: 100%;
+                height: 100%;
+        }
+
+        .sec2-text {
+                transform: translateY(-150px);
+        }
+
+        .card:hover>.sec2-text {
+                transform: translateY(-90px);
+        }
+
+        .sec4-box-icon {
+                margin: 11px;
+        }
+
+        .email p {
+                font-size: 20px;
+        }
+
 }
 
 @media (max-width: 320px) {
         .container {
                 width: 100%;
         }
+
+        .bg {
+                background-size: cover;
+                background-position: center;
+        }
+
+        /* .menu li a {
+                font-size: 5px;
+        } */
+        .name h3 {
+                font-size: 20px;
+        }
+
+        .email p {
+                font-size: 10px;
+        }
+
+        /* .name h3 {
+                font-size: 30px;
+        } */
 }
