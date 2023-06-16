@@ -133,7 +133,7 @@ h5 {
         text-decoration: none;
         font-family: lato;
         text-transform: uppercase;
-        transition: all 1s;
+        transition: all 0.7s;
 }
 
 li a:hover {
@@ -278,7 +278,7 @@ nav {
         height: 250px;
         border-radius: 10px;
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-        transition: 0.3s;
+        transition: 0.7s;
         /* padding: 30px 50px; */
         padding: 20px;
         background-color: rgb(248, 244, 245);
@@ -296,7 +296,7 @@ nav {
         height: 100%;
         /* transform: translateY(-80px); */
         z-index: 99;
-        transition: 0.3s;
+        transition: 0.7s;
 }
 
 .sec2-img img {
@@ -315,9 +315,9 @@ nav {
 .sec2-text {
         padding: 10px;
         text-align: center;
-        transform: translateY(-450px);
+        transform: translateY(-250px);
         opacity: 0;
-        transition: 0.3s;
+        transition: 0.7s;
 }
 
 .sec2-text h4 {
@@ -414,6 +414,10 @@ nav {
         /* padding: 40px 0; */
 }
 
+.sec4-text a {
+        text-decoration: none;
+}
+
 .sec4-text h4 {
         font-size: 50px;
         padding-top: 20px;
@@ -432,6 +436,8 @@ nav {
         border-radius: 5px;
         box-shadow: 2px 2px 15px gray;
         padding: 25px;
+        color: black;
+
 }
 
 .sec4-box-icon {
@@ -444,6 +450,7 @@ nav {
 .sec4-box-icon i {
         font-size: 30px;
         padding: 10px;
+        color: #29323c;
 }
 
 .sec4-box h4 {
@@ -490,6 +497,11 @@ nav {
         padding-bottom: 20px;
         color: aliceblue;
         text-transform: capitalize;
+}
+
+.footer-text a {
+        text-decoration: none;
+        color: #29323c;
 }
 
 .footer-text i {
@@ -593,6 +605,7 @@ nav {
 
 .sec1-box:hover i {
         color: #29323c;
+        font-size: 70px;
 }
 
 /* -------------------------------- */
