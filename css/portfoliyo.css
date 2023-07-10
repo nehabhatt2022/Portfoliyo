@@ -320,9 +320,15 @@ nav {
         padding: 10px 0;
 }
 
+.sec2-text button {
+        padding: 10px 25px;
+        background: none;
+        border: 2px solid crimson;
+}
+
 .card:hover>.sec2-text {
         opacity: 1;
-        transform: translateY(-180px);
+        transform: translateY(-220px);
 }
 
 .card:hover>.sec2-img {
@@ -578,13 +584,15 @@ nav {
         color: aliceblue;
 }
 
-.sec3-btn button:hover {
+.sec3-btn button,
+.sec2-text button:hover {
         background-color: crimson;
         color: aliceblue;
 }
 
 .sec4-box i,
 .sec3-btn button,
+.sec2-text button,
 .footer-text i,
 .sec1-box i {
         transition: 0.7s all;
