@@ -584,7 +584,7 @@ nav {
         color: aliceblue;
 }
 
-.sec3-btn button,
+.sec3-btn button:hover,
 .sec2-text button:hover {
         background-color: crimson;
         color: aliceblue;
